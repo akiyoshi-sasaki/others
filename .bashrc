@@ -2,6 +2,7 @@
 alias ls='ls -G'
 alias ll='ls -la'
 alias sb='source ~/.bashrc'
+alias cpbash='cp ~/develop/others/.bashrc ~/.bashrc'
 
 alias dev='cd ~/develop'
 
@@ -23,7 +24,7 @@ function peco-lscd {
 }
 
 # prompt
-source /usr/local/git/contrib/completion/git-prompt.sh
-source /usr/local/git/contrib/completion/git-completion.bash
+source ~/develop/others/gitsub/git-prompt.sh
+source ~/develop/others/gitsub/git-completion.bash
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\[\033[35m\][\w]\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
