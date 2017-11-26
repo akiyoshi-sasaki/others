@@ -31,7 +31,7 @@ alias vu='vagrant up'
 alias vs='vagrant status'
 
 alias ssngx='sudo service nginx'
-alias ssfpm='sudo service php-fpm'
+alias ssfpm='sudo service php7.0-fpm'
 
 
 #function
