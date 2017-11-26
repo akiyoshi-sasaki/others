@@ -30,6 +30,10 @@ alias gca='git commit --amend'
 alias vu='vagrant up'
 alias vs='vagrant status'
 
+alias ssngx='sudo service nginx'
+alias ssfpm='sudo service php-fpm'
+
+
 #function
 function peco-lscd {
     cd "$( ls -1d */ | peco )"
@@ -39,4 +43,4 @@ function peco-lscd {
 source ~/others/gitsub/git-prompt.sh
 source ~/others/gitsub/git-completion.bash
 GIT_PS1_SHOWDIRTYSTATE=true
-export PS1='\[\033[35m\][\w]\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
+export PS1='\[\033[36m\][\w]\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
