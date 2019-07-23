@@ -60,7 +60,7 @@ brew isntall git
 cd && mkdir repositories
 ```
 
-# プロンプトにgit
+# セットアップ用のリポジトリを手に入れる
 
 ```
 cd ~/repositories/ && git clone git@github.com:akiyoshi-sasaki/others.git
