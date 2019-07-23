@@ -6,15 +6,6 @@
 - Closingの10seconds
 - idle send ASCⅡコード 1every300seconds
 
-# bash
-
-~/.bashrcを作成、かつ以下のように編集
-
-```
-$ cat ~/.bash_profile
-source ~/.bashrc
-```
-
 # brewを入れる場合
 
 以下のサイトからinstallするコマンドをコピーしてくる
@@ -66,6 +57,13 @@ cd && mkdir repositories
 cd ~/repositories/ && git clone git@github.com:akiyoshi-sasaki/others.git
 ```
 
+上記リポジトリ内にある.bashrcを.bash_profile利用する
+
+```
+$ cp ~/repositories/others/.bash_profile ~/.bash_profile
+$ cp ~/repositories/others/.bashrc ~/.bashrc
+$ source ~/.bashrc
+```
 # isntall
 
 ```
@@ -73,7 +71,5 @@ brew install tig
 brew install peco
 brew tap tkengo/highway && brew install highway
 ```
-
-
 
 
