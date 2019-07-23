@@ -65,3 +65,15 @@ cd && mkdir repositories
 ```
 cd ~/repositories/ && git clone git@github.com:akiyoshi-sasaki/others.git
 ```
+
+# isntall
+
+```
+brew install tig
+brew install peco
+brew tap tkengo/highway && brew install highway
+```
+
+
+
+
