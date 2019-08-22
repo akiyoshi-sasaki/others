@@ -42,7 +42,7 @@ Hi akiyoshi-sasaki! You've successfully authenticated, but GitHub does not provi
 # git
 
 ```
-brew isntall git
+brew install git
 ```
 
 # git clone用リポジトリ

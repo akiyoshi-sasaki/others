@@ -29,16 +29,17 @@
 		- クリックのカチカチ音を小さく
 	- 電源アダプタ接続時にスリープさせない
 	- ディスプレイをオフにするまでの時間を延長
-	- 右上の時計で
+	- 右上の時計で日時と曜日も表示させる
 	- キーのリピートは最速
 
 - atomセットアップ
 
 - アプリケーションインストール
 	- chrome
-	- AppStore
-		- Alfred
-		- Slack
+	- Alfred
+		- https://www.alfredapp.com/
+	- Slack
+		- https://slack.com/intl/ja-jp/downloads/mac?geocode=ja-jp
 	- Chatwork
 		- https://go.chatwork.com/ja/download/index.html
 	- Office系
@@ -47,7 +48,10 @@
 		- https://atom.io/
 	- iTerm2
 		- https://www.iterm2.com/
-	-
+
+- atomセットアップ
+
+
 - ファイルサーバ
 	- 「smb://fileserver/13_サービス開発室/」
 
