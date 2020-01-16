@@ -48,6 +48,8 @@
 		- https://atom.io/
 	- iTerm2
 		- https://www.iterm2.com/
+	- AcrobatReader
+		- https://get.adobe.com/jp/reader/?promoid=KSWLH 
 
 - atomセットアップ
 
