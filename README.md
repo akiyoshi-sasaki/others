@@ -57,13 +57,27 @@ cd && mkdir repositories
 cd ~/repositories/ && git clone git@github.com:akiyoshi-sasaki/others.git
 ```
 
-上記リポジトリ内にある.bashrcを.bash_profile利用する
+上記リポジトリ内にあるファイルを利用するのだが
+Macのバージョンによってbashなのかzshなのかが違う
+
+1.bashの場合
+　.bashrcと.bash_profile利用する
 
 ```
 $ cp ~/repositories/others/.bash_profile ~/.bash_profile
 $ cp ~/repositories/others/.bashrc ~/.bashrc
 $ source ~/.bashrc
 ```
+
+2.zshの場合
+　.zshrcを利用する
+
+```
+$ cp ~/repositories/others/.zshrc ~/.zshrc
+$ source ~/.zshrc
+```
+
+
 # isntall
 
 ```
