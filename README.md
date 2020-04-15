@@ -1,10 +1,10 @@
 # iterm設定
 
-- カラープリセットDarkなやつ(青が見えるやつ)
-- 300,000出せる
-- 文字サイズ
-- Closingの10seconds
-- idle send ASCⅡコード 1every300seconds
+- Color: カラープリセットDarkTangoなやつ(青が見えやすいやつ)
+- Terminal: Scrollback lines 300,000文字
+- Text: 文字サイズ好みで
+- Session: closed for up to 10seconds
+- Session: idle send ASCⅡコード 1every300seconds
 
 # brewを入れる場合
 
