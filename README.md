@@ -45,15 +45,10 @@ Hi akiyoshi-sasaki! You've successfully authenticated, but GitHub does not provi
 brew install git
 ```
 
-# git clone用リポジトリ
+# git clone用リポジトリ作成 & セットアップ用のリポジトリを手に入れる
 
 ```
-cd && mkdir repositories
-```
-
-# セットアップ用のリポジトリを手に入れる
-
-```
+mkdir ~/repositories
 cd ~/repositories/ && git clone git@github.com:akiyoshi-sasaki/others.git
 ```
 
@@ -77,8 +72,15 @@ $ cp ~/repositories/others/.zshrc ~/.zshrc
 $ source ~/.zshrc
 ```
 
+(参考)
+[macOS]zshでgitのブランチ名を表示させる
+https://qiita.com/m_yukio/items/16841e5da44fe3e9ba43
 
-# isntall
+macOS を10.13.5にアップデートしたらターミナルが死んだ
+https://qiita.com/Kansei/items/4029a0dff197039c5e78
+
+
+# install
 
 ```
 brew install tig
