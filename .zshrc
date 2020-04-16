@@ -29,7 +29,7 @@ setopt PROMPT_SUBST ; PS1='%F{blue}[%~]%F{yellow}$(__git_ps1 " (%s)")\$ %F{white
 #als
 alias ls='ls -G'
 alias ll='ls -la'
-alias sb='source ~/.bashrc'
+alias sb='source ~/.zshrc'
 alias hg='history | grep '
 alias tree="pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'"
 
@@ -56,5 +56,8 @@ alias vp='vagrant provision'
 
 #function
 function pl {
-    cd "$( ls -1d */ | peco )"
+    local dir="$( find . -maxdepth 1 -type d | sed -e 's;\./;;' | peco )"
+    if [ ! -z "$dir" ] ; then
+        cd "$dir"
+    fi
 }
