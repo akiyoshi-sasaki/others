@@ -32,8 +32,15 @@ alias ll='ls -la'
 alias sb='source ~/.zshrc'
 alias hg='history | grep '
 alias tree="pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'"
+alias less='less -N'
+
+#SSH
+
+alias ssh-kaihatsu='sudo ssh -i "dawn.pem" ubuntu@ec2-18-177-198-56.ap-northeast-1.compute.amazonaws.com'
+alias ssh-kanri='sudo ssh -i "dawn.pem" ec2-user@ec2-18-176-241-78.ap-northeast-1.compute.amazonaws.com'
 
 ## git
+alias ga='git add'
 alias gs='git status'
 alias gb='git branch'
 alias gl='git log'
@@ -42,17 +49,9 @@ alias gf='git fetch'
 alias gch='git checkout'
 alias gcm='git commit -m'
 alias gp='git push'
-alias gca='git commit --amend'
+alias gcma='git commit --amend'
 alias gdo='git diff origin/master..HEAD'
 alias fcommit='git commit --allow-empty -m "first commit"'
-
-## vagrant
-alias vu='vagrant up'
-alias vs='vagrant status'
-alias vss='vagrant ssh'
-alias av='PASSWORD=axelmark3624'
-alias vh='vagrant halt'
-alias vp='vagrant provision'
 
 #function
 function pl {
