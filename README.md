@@ -65,7 +65,8 @@ $ source ~/.bashrc
 ```
 
 2.zshの場合
-　.zshrcを利用する
+
+.zshrcを利用する
 
 ```
 $ cp ~/repositories/others/.zshrc ~/.zshrc
