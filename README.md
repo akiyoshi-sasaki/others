@@ -47,6 +47,8 @@ brew install git
 
 # git clone用リポジトリ作成 & セットアップ用のリポジトリを手に入れる
 
+やってなかったら
+
 ```
 mkdir ~/repositories
 cd ~/repositories/ && git clone git@github.com:akiyoshi-sasaki/others.git

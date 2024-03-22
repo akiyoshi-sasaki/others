@@ -123,6 +123,7 @@
 ```
 mkdir repositories
 cd repositories
+git clone https://github.com/akiyoshi-sasaki/others.git
 ```
 
 

@@ -1,18 +1,18 @@
 ## git prompt
-if [ -f ${HOME}/.zsh/git-completion.zsh ]; then
-    zstyle ':completion:*:*:git:*' script ~/repositories/others/.zsh/git-completion.zsh
-fi
+# https://qiita.com/mikan3rd/items/d41a8ca26523f950ea9d
 
-if [ -f ${HOME}/.zsh/git-prompt.sh ]; then
-    source ${HOME}/repositories/others/.zsh/git-prompt.sh
-fi
+source ~/repositories/others/zsh_gitsub/git-prompt.sh
+
+fpath=(~/repositories/others/.zsh $fpath)
+zstyle ':completion:*:*:git:*' script ~/repositories/others/zsh_gitsub/git-completion.zsh
+autoload -Uz compinit && compinit
 
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWSTASHSTATE=true
-#GIT_PS1_SHOWUPSTREAM=auto
+GIT_PS1_SHOWUPSTREAM=auto
 
-setopt PROMPT_SUBST ; PS1='%F{blue}[%~]%F{yellow}$(__git_ps1 " (%s)")\$ %F{white}'
+setopt PROMPT_SUBST ; PS1='%F{magenta}[%~]%F{yellow}$(__git_ps1 " (%s)")\$ %F{white}'
 
 ## 設定方法
 ## %{$fg[色番号]%} と %{$reset_color%}
