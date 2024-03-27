@@ -1,14 +1,11 @@
-初期設定
-
 # 概要
 
-- 2020-04-15
-- macOS Catalina バージョン 10.15.3
-- MacBook Pro (13-inch, 2019, Two Thunderbolt 3 ports)
-- プロセッサ　1.4 GHz クアッドコアIntel Core i5
-- メモリ　16 GB 2133 MHz LPDDR3
-- グラフィックス　Intel Iris Plus Graphics 645 1536 MB
-- シリアル番号　FVFCJ02NL414
+- 2024年03月
+- macOS Monterey バージョン 12.6.4
+- MacBook Pro (13-inch, M1, 2020)
+- チップ Apple M1
+- メモリ 16 GB
+- シリアル番号 C02F61J7Q05N
 
 # mac初期起動時の設定
 
@@ -34,7 +31,9 @@
 - 時計
 	- 曜日と日付を表示
 - Dock
-	- Finder、リマインダー、システム環境設定、chromeだけにした 
+	- Finder、システム環境設定、chromeだけにした 
+- macのライブ変換が鬱陶しいので切る
+	- 「かな」モードの状態で上の入力のメニューから選択
 
 # システム環境設定
 
@@ -86,7 +85,9 @@
 
 - ※Atom
 	- https://atom.io/
-	- VSCodeに乗り換えるか...
+	- VSCodeに乗り換えるか... 
+		- テキスト開く時のデフォルトアプリ設定
+		- https://www.pc-koubou.jp/magazine/73329
 - Slack
 	- https://slack.com/intl/ja-jp/downloads/mac?geocode=ja-jp
 - iTerm2
@@ -110,61 +111,14 @@
 	- https://docs.docker.com/desktop/install/mac-install/
 - (zoom)
 - (skype)
+- MAMP
+	- Laravelリポジトリをすぐ動かしたい場合
+	- https://www.mamp.info/en/downloads/
 
 
 ## Abode
 
 ログインしてよしなにやるしかない
-
-# itermのセットアップ
-
-まずこのREADMEを手に入れる
-
-```
-mkdir repositories
-cd repositories
-git clone https://github.com/akiyoshi-sasaki/others.git
-```
-
-
-
-参考: https://qiita.com/suthio/items/2760e4cff0e185fe2db9
-
-```
-sasaki@akiyoshinoMacBook-Pro ~ % mkdir ~/.ssh
-sasaki@akiyoshinoMacBook-Pro ~ % ssh-keygen -t rsa -b 4096 -C "a.sasaki@hri-group.com"
-Generating public/private rsa key pair.
-Enter file in which to save the key (/Users/sasaki/.ssh/id_rsa):
-Enter passphrase (empty for no passphrase):
-Enter same passphrase again:
-Your identification has been saved in /Users/sasaki/.ssh/id_rsa.
-Your public key has been saved in /Users/sasaki/.ssh/id_rsa.pub.
-The key fingerprint is:
-SHA256:IjxTyHyuhHIhItmT2vuUqP6SqYmJ/0t1oqOMPdYfT+w a.sasaki@hri-group.com
-```
-
-Githubにブラウザからログインして
-
-```
-cat ~/.ssh/id_rsa.pub
-```
-
-で表示したSSHキーをGithubに登録
-そしたら以下のリポジトリを落としてくる
-
-```
-git clone git@github.com:akiyoshi-sasaki/others.git
-```
-
-あとはREADME.mdに沿って進める
-
-## やったこと
-
-[macOS]zshでgitのブランチ名を表示させる
-https://qiita.com/m_yukio/items/16841e5da44fe3e9ba43
-
-macOS を10.13.5にアップデートしたらターミナルが死んだ
-https://qiita.com/Kansei/items/4029a0dff197039c5e78
 
 # DAWN開発環境
 
@@ -176,6 +130,15 @@ https://qiita.com/Kansei/items/4029a0dff197039c5e78
 
 以下を進める
 https://l-boom.backlog.com/wiki/D_P01/%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89+%2F+%E7%AE%A1%E7%90%86%E3%83%84%E3%83%BC%E3%83%AB+vagrant#loom-header-4
+
+- bitbucketがアプリパスワードの認証へ
+	- https://bitbucket.org/account/settings/app-passwords/
+- git利用時にエラー「RPC failed; curl 92 HTTP/2 stream 7 was not closed cleanly before end of the underlying stream」
+	- https://support-ja.backlog.com/hc/ja/articles/1500000468922-Git%E3%81%AB%E3%83%97%E3%83%83%E3%82%B7%E3%83%A5%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93
+- コンテナのup時にエラー
+	- https://qiita.com/jizya/items/38f15271903de629d1ab
+- コンテナに入っても少しでも入力すると落ちる
+
 
 ```
 cd ~ && mkdir dawn-manage
@@ -200,5 +163,6 @@ config.vm.synced_folder "../Laravel", "/var/www/html"
 　↑（吉見追記）vagrantのフォルダ共有用プラグインが入ってないと正常に設定されない場合があるので、下記の参考ページを確認した方が良いです
 ```
 
+# デスクトップ背景
 
-***
+いい感じの画像を集めて1つのフォルダに集めてランダムで表示させる
